@@ -1,13 +1,17 @@
 package br.edu.ifba.saj.fwads.model;
 
+import java.util.ArrayList;
+
 public class Autor {
     private String nome;
     private String email;
     private String CPF;
-    public Autor(String nome, String email, String cPF) {
+    private ArrayList<Livro> listaLivrosLancados;
+    public Autor(String nome, String email, String cPF, ArrayList<Livro> listaLivrosLancados) {
         this.nome = nome;
         this.email = email;
         CPF = cPF;
+        this.listaLivrosLancados = listaLivrosLancados;
     }
     public String getNome() {
         return nome;
@@ -27,6 +31,15 @@ public class Autor {
     public void setCPF(String cPF) {
         CPF = cPF;
     }
+
+    public ArrayList<Livro> getListaLivrosLancados() {
+        return listaLivrosLancados;
+    }
+
+    public void setListaLivrosLancados(ArrayList<Livro> listaLivrosLancados) {
+        this.listaLivrosLancados = listaLivrosLancados;
+    }
+
     @Override
     public String toString() {
         return "Autor [nome=" + nome + ", email=" + email + ", CPF=" + CPF + "]";
@@ -66,6 +79,7 @@ public class Autor {
             return false;
         return true;
     }
+
 
     
     

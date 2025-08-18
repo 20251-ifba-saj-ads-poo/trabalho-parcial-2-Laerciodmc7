@@ -2,6 +2,7 @@ package br.edu.ifba.saj.fwads.controller;
 
 import br.edu.ifba.saj.fwads.Biblioteca;
 import br.edu.ifba.saj.fwads.model.Autor;
+import br.edu.ifba.saj.fwads.model.Categoria;
 import br.edu.ifba.saj.fwads.model.Livro;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.Pane;
 import javafx.util.StringConverter;
+import java.util.ArrayList;
 
 public class CadLivroController {
     @FXML
@@ -25,10 +27,15 @@ public class CadLivroController {
 
     @FXML
     void salvarLivro(ActionEvent event) {
+
+        ArrayList<Categoria> categoriasSelecionadas = new ArrayList<>();
+
         Livro novoLivro = new Livro(txTitulo.getText(),
-                    txSubTitulo.getText(), 
-                    txISBN.getText(),
-                    slAutor.getSelectionModel().getSelectedItem());
+                txSubTitulo.getText(),
+                txISBN.getText(),
+                slAutor.getSelectionModel().getSelectedItem(),
+                categoriasSelecionadas);
+
         new Alert(AlertType.INFORMATION, 
         "Cadastrando Livro(Fake):"+novoLivro.toString()).showAndWait();
         limparTela();

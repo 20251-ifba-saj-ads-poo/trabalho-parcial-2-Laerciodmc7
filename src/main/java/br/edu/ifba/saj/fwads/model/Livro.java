@@ -1,16 +1,20 @@
 package br.edu.ifba.saj.fwads.model;
 
+import java.util.ArrayList;
+
 public class Livro {
     private String titulo;
     private String subTitulo;
     private String ISBN;
     private Autor autor;
+    private ArrayList<Categoria> categoriaLivro;
 
-    public Livro(String titulo, String subTitulo, String iSBN, Autor autor) {
+    public Livro(String titulo, String subTitulo, String iSBN, Autor autor, ArrayList<Categoria> categoriaLivro) {
         this.titulo = titulo;
         this.subTitulo = subTitulo;
         ISBN = iSBN;
         this.autor = autor;
+        this.categoriaLivro = categoriaLivro;
     }
 
     public String getTitulo() {
