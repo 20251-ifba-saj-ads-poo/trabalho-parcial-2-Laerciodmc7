@@ -2,7 +2,7 @@ package br.edu.ifba.saj.fwads.model;
 
 import java.util.ArrayList;
 
-public class Autor {
+public class Autor extends AbstractModel{
     private String nome;
     private String email;
     private String CPF;

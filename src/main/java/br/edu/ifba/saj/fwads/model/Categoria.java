@@ -1,6 +1,6 @@
 package br.edu.ifba.saj.fwads.model;
 
-public class Categoria {
+public class Categoria extends AbstractModel{
     private String nome;
 
     public Categoria(String nome) {

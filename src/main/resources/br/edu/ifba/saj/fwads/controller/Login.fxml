@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.LoginController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.LoginController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -25,16 +25,25 @@
    <children>
       <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: green;">
          <children>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <VBox alignment="CENTER" prefHeight="493.0" prefWidth="399.0" style="-fx-background-color: #2C7BE5;">
                <children>
-                  <ImageView fitHeight="336.0" fitWidth="337.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/LogoV.png" />
-                     </image>
-                  </ImageView>
-                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Bem vindo ao Sistema" textAlignment="CENTER" textFill="WHITE">
+                  <Label text="Bilbioteca Digital">
                      <font>
-                        <Font name="Carlito Bold Italic" size="26.0" />
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="90.0" AnchorPane.leftAnchor="90.0">
+                           <image>
+                              <Image url="@assets/study.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label text="Seja bem-vindo à biblioteca digital">
+                     <font>
+                        <Font size="16.0" />
                      </font>
                   </Label>
                </children>

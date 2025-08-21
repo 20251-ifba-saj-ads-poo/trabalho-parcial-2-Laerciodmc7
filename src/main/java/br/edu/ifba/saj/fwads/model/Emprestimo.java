@@ -2,7 +2,7 @@ package br.edu.ifba.saj.fwads.model;
 
 import java.time.LocalDate;
 
-public class Emprestimo {
+public class Emprestimo extends AbstractModel{
     private Usuario usuario;
     private int idEmprestimo;
     private Livro livroEmprestado;

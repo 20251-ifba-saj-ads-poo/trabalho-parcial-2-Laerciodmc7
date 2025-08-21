@@ -3,7 +3,7 @@ package br.edu.ifba.saj.fwads.model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Usuario {
+public class Usuario extends AbstractModel{
     private String nome;
     private String userName;
     private LocalDate dataNascimento;

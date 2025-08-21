@@ -1,56 +1,71 @@
 package br.edu.ifba.saj.fwads.model;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Livro {
-    private String titulo;
-    private String subTitulo;
-    private String ISBN;
-    private Autor autor;
+public class Livro extends AbstractModel{
+    private String nomeLivro;
+    private Autor autorLivro;
+    private LocalDate dataLancamento;
+    private int qntPaginas;
     private ArrayList<Categoria> categoriaLivro;
 
-    public Livro(String titulo, String subTitulo, String iSBN, Autor autor, ArrayList<Categoria> categoriaLivro) {
-        this.titulo = titulo;
-        this.subTitulo = subTitulo;
-        ISBN = iSBN;
-        this.autor = autor;
+    public Livro(String nomeLivro, Autor autorLivro, LocalDate dataLancamento, int qntPaginas, ArrayList<Categoria> categoriaLivro) {
+        this.nomeLivro = nomeLivro;
+        this.autorLivro = autorLivro;
+        this.dataLancamento = dataLancamento;
+        this.qntPaginas = qntPaginas;
         this.categoriaLivro = categoriaLivro;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getNomeLivro() {
+        return nomeLivro;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setNomeLivro(String nomeLivro) {
+        this.nomeLivro = nomeLivro;
     }
 
-    public String getSubTitulo() {
-        return subTitulo;
+    public Autor getAutorLivro() {
+        return autorLivro;
     }
 
-    public void setSubTitulo(String subTitulo) {
-        this.subTitulo = subTitulo;
+    public void setAutorLivro(Autor autorLivro) {
+        this.autorLivro = autorLivro;
     }
 
-    public String getISBN() {
-        return ISBN;
+    public LocalDate getDataLancamento() {
+        return dataLancamento;
     }
 
-    public void setISBN(String iSBN) {
-        ISBN = iSBN;
+    public void setDataLancamento(LocalDate dataLancamento) {
+        this.dataLancamento = dataLancamento;
     }
 
-    public Autor getAutor() {
-        return autor;
+    public int getQntPaginas() {
+        return qntPaginas;
     }
 
-    public void setAutor(Autor autor) {
-        this.autor = autor;
+    public void setQntPaginas(int qntPaginas) {
+        this.qntPaginas = qntPaginas;
+    }
+
+    public ArrayList<Categoria> getCategoriaLivro() {
+        return categoriaLivro;
+    }
+
+    public void setCategoriaLivro(ArrayList<Categoria> categoriaLivro) {
+        this.categoriaLivro = categoriaLivro;
     }
 
     @Override
     public String toString() {
-        return "Livro [titulo=" + titulo + ", subTitulo=" + subTitulo + ", ISBN=" + ISBN + ", autor=" + autor + "]";
+        return "Livro{" +
+                "nomeLivro='" + nomeLivro + '\'' +
+                ", autorLivro=" + autorLivro +
+                ", dataLancamento='" + dataLancamento + '\'' +
+                ", qntPaginas=" + qntPaginas +
+                ", categoriaLivro=" + categoriaLivro +
+                '}';
     }
 }
