@@ -2,8 +2,9 @@ package br.edu.ifba.saj.fwads.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.UUID;
 
-public class Usuario extends AbstractModel{
+public class Usuario extends AbstractModel<UUID>{
     private String nome;
     private String userName;
     private LocalDate dataNascimento;
@@ -13,14 +14,13 @@ public class Usuario extends AbstractModel{
     private int id;
     private int limiteEmprestimo;
 
-    public Usuario(String nome, String userName, LocalDate dataNascimento, String cpfUsuario, String senha, ArrayList<Emprestimo> emprestimosPessoais, int id, int limiteEmprestimo) {
+    public Usuario(String nome, String userName, LocalDate dataNascimento, String cpfUsuario, String senha, ArrayList<Emprestimo> emprestimosPessoais, int limiteEmprestimo) {
         this.nome = nome;
         this.userName = userName;
         this.dataNascimento = dataNascimento;
         this.cpfUsuario = cpfUsuario;
         Senha = senha;
         this.emprestimosPessoais = emprestimosPessoais;
-        this.id = id;
         this.limiteEmprestimo = limiteEmprestimo;
     }
 
@@ -48,9 +48,6 @@ public class Usuario extends AbstractModel{
         return emprestimosPessoais;
     }
 
-    public int getId() {
-        return id;
-    }
 
     public int getLimiteEmprestimo() {
         return limiteEmprestimo;
@@ -78,10 +75,6 @@ public class Usuario extends AbstractModel{
 
     public void setEmprestimosPessoais(ArrayList<Emprestimo> emprestimosPessoais) {
         this.emprestimosPessoais = emprestimosPessoais;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setLimiteEmprestimo(int limiteEmprestimo) {

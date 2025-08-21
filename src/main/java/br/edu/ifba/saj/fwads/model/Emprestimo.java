@@ -1,8 +1,9 @@
 package br.edu.ifba.saj.fwads.model;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
-public class Emprestimo extends AbstractModel{
+public class Emprestimo extends AbstractModel<UUID>{
     private Usuario usuario;
     private int idEmprestimo;
     private Livro livroEmprestado;

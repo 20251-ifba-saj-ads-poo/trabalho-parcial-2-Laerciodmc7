@@ -2,8 +2,10 @@ package br.edu.ifba.saj.fwads.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.UUID;
 
-public class Livro extends AbstractModel{
+
+public class Livro extends AbstractModel<UUID>{
     private String nomeLivro;
     private Autor autorLivro;
     private LocalDate dataLancamento;

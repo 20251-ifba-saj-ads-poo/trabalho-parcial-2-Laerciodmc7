@@ -1,86 +1,50 @@
 package br.edu.ifba.saj.fwads.model;
 
 import java.util.ArrayList;
+import java.util.UUID;
+import java.time.LocalDate;
 
-public class Autor extends AbstractModel{
-    private String nome;
-    private String email;
-    private String CPF;
-    private ArrayList<Livro> listaLivrosLancados;
-    public Autor(String nome, String email, String cPF, ArrayList<Livro> listaLivrosLancados) {
-        this.nome = nome;
-        this.email = email;
-        CPF = cPF;
-        this.listaLivrosLancados = listaLivrosLancados;
-    }
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    public String getCPF() {
-        return CPF;
-    }
-    public void setCPF(String cPF) {
-        CPF = cPF;
+public class Autor extends AbstractModel<UUID>{
+   private String nomeAutor;
+   private LocalDate dataNascimento;
+   private ArrayList<Livro> livrosDisponiveis;
+
+    public Autor(String nomeAutor, LocalDate dataNascimento, ArrayList<Livro> livrosDisponiveis) {
+        this.nomeAutor = nomeAutor;
+        this.dataNascimento = dataNascimento;
+        this.livrosDisponiveis = livrosDisponiveis;
     }
 
-    public ArrayList<Livro> getListaLivrosLancados() {
-        return listaLivrosLancados;
+    public String getNomeAutor() {
+        return nomeAutor;
     }
 
-    public void setListaLivrosLancados(ArrayList<Livro> listaLivrosLancados) {
-        this.listaLivrosLancados = listaLivrosLancados;
+    public void setNomeAutor(String nomeAutor) {
+        this.nomeAutor = nomeAutor;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public ArrayList<Livro> getLivrosDisponiveis() {
+        return livrosDisponiveis;
+    }
+
+    public void setLivrosDisponiveis(ArrayList<Livro> livrosDisponiveis) {
+        this.livrosDisponiveis = livrosDisponiveis;
     }
 
     @Override
     public String toString() {
-        return "Autor [nome=" + nome + ", email=" + email + ", CPF=" + CPF + "]";
+        return "Autor{" +
+                "nomeAutor='" + nomeAutor + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", livrosDisponiveis=" + livrosDisponiveis +
+                '}';
     }
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((nome == null) ? 0 : nome.hashCode());
-        result = prime * result + ((email == null) ? 0 : email.hashCode());
-        result = prime * result + ((CPF == null) ? 0 : CPF.hashCode());
-        return result;
-    }
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Autor other = (Autor) obj;
-        if (nome == null) {
-            if (other.nome != null)
-                return false;
-        } else if (!nome.equals(other.nome))
-            return false;
-        if (email == null) {
-            if (other.email != null)
-                return false;
-        } else if (!email.equals(other.email))
-            return false;
-        if (CPF == null) {
-            if (other.CPF != null)
-                return false;
-        } else if (!CPF.equals(other.CPF))
-            return false;
-        return true;
-    }
-
-
-    
-    
 }

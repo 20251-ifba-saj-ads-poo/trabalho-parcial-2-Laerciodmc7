@@ -1,6 +1,8 @@
 package br.edu.ifba.saj.fwads.model;
 
-public class Categoria extends AbstractModel{
+import java.util.UUID;
+
+public class Categoria extends AbstractModel<UUID> {
     private String nome;
 
     public Categoria(String nome) {
