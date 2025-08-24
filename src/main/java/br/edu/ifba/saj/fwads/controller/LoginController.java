@@ -8,6 +8,7 @@ import br.edu.ifba.saj.fwads.App;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
@@ -21,11 +22,14 @@ public class LoginController {
     private TextField txUsuario; // Value injected by FXMLLoader
 
     @FXML
+    private Hyperlink txCadUsuario;
+
+    @FXML
     void entrar(ActionEvent event) {
-        if(txUsuario.getText().equals("admin") && txSenha.getText().equals("admin")){
+        if (txUsuario.getText().equals("admin") && txSenha.getText().equals("admin")) {
             new Alert(AlertType.INFORMATION, "Usuário e senha corretos").showAndWait();
             App.setRoot("controller/Master.fxml");
-        }else{
+        } else {
             new Alert(AlertType.ERROR, "Usuário ou senha inválidos").show();
         }
     }
@@ -36,4 +40,8 @@ public class LoginController {
         txSenha.setText("");
     }
 
+    @FXML
+    void carregaTelaCadastro(ActionEvent event) { //metodo que carrega a tela de cadastro
+        App.setRoot("/br/edu/ifba/saj/fwads/controller/CadUsuario.fxml");
+    }
 }

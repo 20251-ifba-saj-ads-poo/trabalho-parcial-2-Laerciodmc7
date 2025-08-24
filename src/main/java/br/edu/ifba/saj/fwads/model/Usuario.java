@@ -1,46 +1,47 @@
 package br.edu.ifba.saj.fwads.model;
 
-import java.time.LocalDate;
+import javafx.scene.control.TextField;
+
 import java.util.ArrayList;
 import java.util.UUID;
 
 public class Usuario extends AbstractModel<UUID>{
-    private String nome;
-    private String userName;
-    private LocalDate dataNascimento;
-    private String cpfUsuario;
-    private String Senha;
+    private TextField nome;
+    private TextField userName;
+    private TextField dataNascimento;
+    private TextField cpfUsuario;
+    private TextField Senha;
     private ArrayList<Emprestimo> emprestimosPessoais;
     private int id;
     private int limiteEmprestimo;
 
-    public Usuario(String nome, String userName, LocalDate dataNascimento, String cpfUsuario, String senha, ArrayList<Emprestimo> emprestimosPessoais, int limiteEmprestimo) {
+    public Usuario(TextField nome, TextField userName, TextField dataNascimento, TextField cpfUsuario, TextField senha, ArrayList<Emprestimo> emprestimosPessoais, int limiteEmprestimo) {
         this.nome = nome;
         this.userName = userName;
         this.dataNascimento = dataNascimento;
         this.cpfUsuario = cpfUsuario;
-        Senha = senha;
+        this.Senha = senha;
         this.emprestimosPessoais = emprestimosPessoais;
         this.limiteEmprestimo = limiteEmprestimo;
     }
 
-    public String getNome() {
+    public TextField getNome() {
         return nome;
     }
 
-    public String getUserName() {
+    public TextField getUserName() {
         return userName;
     }
 
-    public LocalDate getDataNascimento() {
+    public TextField getDataNascimento() {
         return dataNascimento;
     }
 
-    public String getCpfUsuario() {
+    public TextField getCpfUsuario() {
         return cpfUsuario;
     }
 
-    public String getSenha() {
+    public TextField getSenha() {
         return Senha;
     }
 
@@ -53,23 +54,23 @@ public class Usuario extends AbstractModel<UUID>{
         return limiteEmprestimo;
     }
 
-    public void setNome(String nome) {
+    public void setNome(TextField nome) {
         this.nome = nome;
     }
 
-    public void setUserName(String userName) {
+    public void setUserName(TextField userName) {
         this.userName = userName;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(TextField dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
-    public void setCpfUsuario(String cpfUsuario) {
+    public void setCpfUsuario(TextField cpfUsuario) {
         this.cpfUsuario = cpfUsuario;
     }
 
-    public void setSenha(String senha) {
+    public void setSenha(TextField senha) {
         Senha = senha;
     }
 
