@@ -2,15 +2,16 @@ package br.edu.ifba.saj.fwads.controller;
 
 
 import br.edu.ifba.saj.fwads.App;
-import br.edu.ifba.saj.fwads.model.Emprestimo;
+import br.edu.ifba.saj.fwads.Biblioteca;
 import br.edu.ifba.saj.fwads.model.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
 import java.util.ArrayList;
+
 
 public class CadUsuarioController {
 
@@ -19,7 +20,7 @@ public class CadUsuarioController {
     @FXML
     private TextField txUserName;
     @FXML
-    private TextField txDataNascimento;
+    private DatePicker dpDataNascimento;
     @FXML
     private TextField txCpf;
 
@@ -28,19 +29,28 @@ public class CadUsuarioController {
     @FXML
     private PasswordField txConfirmaSenha;
 
-    @FXML
-    public void Criar(ActionEvent actionEvent) {
-        if(!txCriaSenha.equals(txConfirmaSenha)){
-            new Alert(Alert.AlertType.ERROR, "Erro ao inserir senhas").show();
-        }
+    private Usuario novoUsuario;
 
-        Usuario newUsuario = new Usuario(txNomeCompleto, txUserName,txDataNascimento,txCpf,txCriaSenha, new ArrayList<>(), 3);
-        App.setRoot("/br/edu/ifba/saj/fwads/controller/MenuController.fxml");
-
+    public Usuario getUsuarioCadastrado(){
+        return novoUsuario;
     }
 
-    public void cancelar(){
-        App.setRoot("/br/edu/ifba/saj/fwads/controller/LoginController.fxml");
+
+    @FXML
+    public void Criar(ActionEvent event) {
+        if(!txCriaSenha.getText().equals(txConfirmaSenha.getText()) || txCriaSenha.getText().equals("")){
+            new Alert(Alert.AlertType.ERROR, "Erro ao inserir senhas").show();
+        }
+    else {
+            novoUsuario = new Usuario(txNomeCompleto.getText(), txUserName.getText(), dpDataNascimento.getValue(), txCpf.getText(), txCriaSenha.getText(), new ArrayList<>(), 3);
+            Biblioteca.setUsuarioLogado(novoUsuario);
+            new Alert(Alert.AlertType.INFORMATION, "Usuário criado com sucesso").showAndWait();
+            App.setRoot("/br/edu/ifba/saj/fwads/controller/Master.fxml");
+        }
+    }
+
+    public void cancelar(ActionEvent event){
+        App.setRoot("/br/edu/ifba/saj/fwads/controller/Login.fxml");
     }
 
 

@@ -1,21 +1,19 @@
 package br.edu.ifba.saj.fwads.model;
 
-import javafx.scene.control.TextField;
-
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.UUID;
 
 public class Usuario extends AbstractModel<UUID>{
-    private TextField nome;
-    private TextField userName;
-    private TextField dataNascimento;
-    private TextField cpfUsuario;
-    private TextField Senha;
+    private String nome;
+    private String userName;
+    private LocalDate dataNascimento;
+    private String cpfUsuario;
+    private String Senha;
     private ArrayList<Emprestimo> emprestimosPessoais;
-    private int id;
     private int limiteEmprestimo;
 
-    public Usuario(TextField nome, TextField userName, TextField dataNascimento, TextField cpfUsuario, TextField senha, ArrayList<Emprestimo> emprestimosPessoais, int limiteEmprestimo) {
+    public Usuario(String nome, String userName, LocalDate dataNascimento, String cpfUsuario, String senha, ArrayList<Emprestimo> emprestimosPessoais, int limiteEmprestimo) {
         this.nome = nome;
         this.userName = userName;
         this.dataNascimento = dataNascimento;
@@ -25,57 +23,56 @@ public class Usuario extends AbstractModel<UUID>{
         this.limiteEmprestimo = limiteEmprestimo;
     }
 
-    public TextField getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public TextField getUserName() {
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getUserName() {
         return userName;
     }
 
-    public TextField getDataNascimento() {
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public TextField getCpfUsuario() {
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public String getCpfUsuario() {
         return cpfUsuario;
     }
 
-    public TextField getSenha() {
+    public void setCpfUsuario(String cpfUsuario) {
+        this.cpfUsuario = cpfUsuario;
+    }
+
+    public String getSenha() {
         return Senha;
+    }
+
+    public void setSenha(String senha) {
+        Senha = senha;
     }
 
     public ArrayList<Emprestimo> getEmprestimosPessoais() {
         return emprestimosPessoais;
     }
 
+    public void setEmprestimosPessoais(ArrayList<Emprestimo> emprestimosPessoais) {
+        this.emprestimosPessoais = emprestimosPessoais;
+    }
 
     public int getLimiteEmprestimo() {
         return limiteEmprestimo;
-    }
-
-    public void setNome(TextField nome) {
-        this.nome = nome;
-    }
-
-    public void setUserName(TextField userName) {
-        this.userName = userName;
-    }
-
-    public void setDataNascimento(TextField dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
-    public void setCpfUsuario(TextField cpfUsuario) {
-        this.cpfUsuario = cpfUsuario;
-    }
-
-    public void setSenha(TextField senha) {
-        Senha = senha;
-    }
-
-    public void setEmprestimosPessoais(ArrayList<Emprestimo> emprestimosPessoais) {
-        this.emprestimosPessoais = emprestimosPessoais;
     }
 
     public void setLimiteEmprestimo(int limiteEmprestimo) {

@@ -1,13 +1,20 @@
 package br.edu.ifba.saj.fwads;
 
 import br.edu.ifba.saj.fwads.model.Autor;
+import br.edu.ifba.saj.fwads.model.Usuario;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import java.util.ArrayList;
 
 public class Biblioteca {
-    public static ObservableList<Autor> listaAutores = FXCollections.observableArrayList();
-    static{
-        //listaAutores.add(new Autor("Jose","jose@seila.com","123.456.789.-11"));
+    private static Usuario usuarioLogado;
+
+    public static void setUsuarioLogado(Usuario usuario) {
+        usuarioLogado = usuario;
     }
-    
+
+    public static Usuario getUsuarioLogado() {
+        return usuarioLogado;
+    }
+
 }

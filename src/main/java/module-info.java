@@ -3,6 +3,7 @@ module br.edu.ifba.saj.fwads {
     requires javafx.fxml;
 
 
+
     opens br.edu.ifba.saj.fwads.controller to javafx.fxml;    
     opens br.edu.ifba.saj.fwads.model to javafx.base, javafx.fxml;   
     

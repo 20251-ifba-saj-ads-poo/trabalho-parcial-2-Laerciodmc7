@@ -4,10 +4,7 @@ import br.edu.ifba.saj.fwads.App;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
@@ -30,6 +27,9 @@ public class MenuController {
     private Circle userPicture;
 
     @FXML
+    private TextField txPesquisar;
+
+    @FXML
     void logOff(MouseEvent event) {
         Alert alert = new Alert(AlertType.CONFIRMATION, "Deseja realmente sair??", ButtonType.YES, ButtonType.NO);
         alert.showAndWait()
@@ -38,6 +38,18 @@ public class MenuController {
                     App.setRoot("controller/Login.fxml");
                 });
     }
+
+    @FXML
+    void showHome(){
+        App.setRoot("controller/Master.fxml");
+    }
+
+
+    @FXML
+    void showMeuPerfil(ActionEvent event){
+        App.setRoot("controller/MeuPerfil.fxml");
+    }
+
 
     @FXML
     void showHome(ActionEvent event) {
@@ -87,5 +99,12 @@ public class MenuController {
             new Alert(AlertType.ERROR, "Erro ao carregar o arquivo " + resourceName).showAndWait();
             e.printStackTrace();
         }
+    }
+
+    public void showEmprestimos(ActionEvent event) {
+    }
+
+    public void voltarTelaLogin(ActionEvent event) {
+        App.setRoot("controller/Login.fxml");
     }
 }

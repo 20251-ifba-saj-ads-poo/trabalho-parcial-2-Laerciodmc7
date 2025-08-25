@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -76,15 +77,15 @@
                </font>
             </Label>
             <PasswordField fx:id="txConfirmaSenha" layoutX="167.0" layoutY="374.0" prefHeight="35.0" prefWidth="679.0" promptText="Confirme sua senha" stylesheets="@assets/style.css" />
-            <Button defaultButton="true" layoutX="341.0" layoutY="509.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: darkgrey;" styleClass="btn-login" stylesheets="@assets/style.css" text="Cancelar" textFill="WHITE">
+            <Button defaultButton="false" layoutX="341.0" layoutY="509.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: darkgrey;" styleClass="btn-login" stylesheets="@assets/style.css" text="Cancelar" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
             <TextField fx:id="txNomeCompleto" layoutX="189.0" layoutY="189.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome completo" stylesheets="@assets/style.css" />
             <TextField fx:id="txUserName" layoutX="189.0" layoutY="236.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome completo" stylesheets="@assets/style.css" />
-            <TextField fx:id="txDataNascimento" layoutX="195.0" layoutY="283.0" prefHeight="35.0" prefWidth="312.0" promptText="Data de nascimento" stylesheets="@assets/style.css" />
             <TextField fx:id="txCpf" layoutX="560.0" layoutY="283.0" prefHeight="35.0" prefWidth="290.0" promptText="CPF" stylesheets="@assets/style.css" />
+            <DatePicker fx:id="dpDataNascimento" layoutX="201.0" layoutY="288.0" prefHeight="24.0" prefWidth="309.0" promptText="Formato: DD-MM-AAAA" />
          </children>
       </AnchorPane>
    </children>
