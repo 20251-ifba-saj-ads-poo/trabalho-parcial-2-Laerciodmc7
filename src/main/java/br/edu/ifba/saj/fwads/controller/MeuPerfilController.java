@@ -1,8 +1,11 @@
 package br.edu.ifba.saj.fwads.controller;
 
+import br.edu.ifba.saj.fwads.App;
 import br.edu.ifba.saj.fwads.Biblioteca;
 import br.edu.ifba.saj.fwads.model.Usuario;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
@@ -24,6 +27,13 @@ public class MeuPerfilController {
     private TextField txShowUserName;
 
     @FXML
+    private Button bntEditarPerfil;
+
+    @FXML
+    private Button bntCancelarEdicao;
+
+
+    @FXML
     public void initialize(){
         Usuario usuario = Biblioteca.getUsuarioLogado();
 
@@ -35,7 +45,19 @@ public class MeuPerfilController {
 
     }
 
+    @FXML
+    public void editarPerfil(ActionEvent event){
+        bntEditarPerfil.setText("Salvar");
 
+    }
+
+    @FXML
+    public void cancelarEdicao(){}
+
+    @FXML
+    private void voltarMenu(){
+        App.setRoot("controller/Master.fxml");
+    }
 
 
 }

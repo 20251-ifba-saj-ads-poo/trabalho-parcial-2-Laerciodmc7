@@ -99,9 +99,10 @@ public class MenuController {
     }
 
     public void showEmprestimos(ActionEvent event) {
+        App.setRoot("controller/Emprestimos.fxml");
     }
 
-    public void voltarTelaLogin(ActionEvent event) {
+    public void voltarTelaLogin() {
         App.setRoot("controller/Login.fxml");
     }
 }
