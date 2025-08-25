@@ -24,7 +24,7 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
-        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: green;">
+        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: grey;">
             <children>
                 <VBox alignment="CENTER" prefHeight="493.0" prefWidth="399.0" style="-fx-background-color: #F5F5F5;">
                     <children>
@@ -44,7 +44,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Hyperlink fx:id="txCadUsuario" layoutX="74.0" layoutY="338.0" text="Não tem conta? Cadastre-se" textFill="#1565c0" onAction="#carregaTelaCadastro">
+                                        <Hyperlink fx:id="txCadUsuario" layoutX="87.0" layoutY="337.0" onAction="#carregaTelaCadastro" text="Não tem conta? Cadastre-se" textFill="#1565c0">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
