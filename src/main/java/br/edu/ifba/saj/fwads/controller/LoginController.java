@@ -7,7 +7,6 @@ package br.edu.ifba.saj.fwads.controller;
 
 import br.edu.ifba.saj.fwads.App;
 import br.edu.ifba.saj.fwads.Biblioteca;
-import br.edu.ifba.saj.fwads.model.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -28,9 +27,8 @@ public class LoginController {
     private Hyperlink txCadUsuario;
 
 
-
     @FXML
-   public void entrar(ActionEvent event) {
+    public void entrar() {
         if (txUsuario.getText().equals(Biblioteca.getUsuarioLogado().getUserName()) && txSenha.getText().equals(Biblioteca.getUsuarioLogado().getSenha())) {
             new Alert(AlertType.INFORMATION, "Usuário e senha corretos").showAndWait();
             App.setRoot("controller/Master.fxml");
@@ -46,7 +44,8 @@ public class LoginController {
     }
 
     @FXML
-    public void carregaTelaCadastro(ActionEvent event) { //metodo que carrega a tela de cadastro
-        App.setRoot("/br/edu/ifba/saj/fwads/controller/CadUsuario.fxml");
+    public void carregaTelaCadastro() { //metodo que carrega a tela de cadastro
+            App.setRoot("controller/CadUsuario.fxml");
     }
+
 }

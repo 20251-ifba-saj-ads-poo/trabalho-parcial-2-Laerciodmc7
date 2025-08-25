@@ -82,8 +82,8 @@
                   <Font size="20.0" />
                </font>
             </Button>
-            <TextField fx:id="txNomeCompleto" layoutX="189.0" layoutY="189.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome completo" stylesheets="@assets/style.css" />
-            <TextField fx:id="txUserName" layoutX="189.0" layoutY="236.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome completo" stylesheets="@assets/style.css" />
+            <TextField fx:id="txNomeCompleto" editable="true" layoutX="189.0" layoutY="189.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome completo" stylesheets="@assets/style.css" />
+            <TextField fx:id="txUserName" layoutX="189.0" layoutY="236.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome de usuário" stylesheets="@assets/style.css" />
             <TextField fx:id="txCpf" layoutX="560.0" layoutY="283.0" prefHeight="35.0" prefWidth="290.0" promptText="CPF" stylesheets="@assets/style.css" />
             <DatePicker fx:id="dpDataNascimento" layoutX="201.0" layoutY="288.0" prefHeight="24.0" prefWidth="309.0" promptText="Formato: DD-MM-AAAA" />
          </children>

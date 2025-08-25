@@ -50,8 +50,7 @@ public class CadUsuarioController {
     }
 
     public void cancelar(ActionEvent event){
-        App.setRoot("/br/edu/ifba/saj/fwads/controller/Login.fxml");
+        App.setRoot("resources/br/edu/ifba/saj/fwads/controller/Login.fxml");
     }
-
 
 }

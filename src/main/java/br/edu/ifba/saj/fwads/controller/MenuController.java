@@ -53,9 +53,6 @@ public class MenuController {
 
     @FXML
     void showHome(ActionEvent event) {
-        limparBotoes(event.getSource());
-        masterPane.setCenter(new Pane());
-
     }
 
     @FXML

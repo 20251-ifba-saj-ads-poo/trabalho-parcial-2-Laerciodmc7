@@ -1,0 +1,47 @@
+[33mcommit c5da7b5bcf5f8922318cfd5874ab98740a3e9097[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Laerciodmc7 <Laerciosdamacena2006@gmail.com>
+Date:   Mon Aug 25 00:50:58 2025 -0300
+
+    update telas / desenvolvimento de cadastro
+
+[33mcommit cf5e6ef2bfe40896a5a4b5090e8d67158523b771[m
+Author: Laerciodmc7 <Laerciosdamacena2006@gmail.com>
+Date:   Sun Aug 24 00:34:34 2025 -0300
+
+    update telas
+
+[33mcommit 296e7d8b36f3699f2a6cf50c8909a1ab0e92d672[m
+Author: Laerciodmc7 <Laerciosdamacena2006@gmail.com>
+Date:   Thu Aug 21 19:56:30 2025 -0300
+
+    update telas
+
+[33mcommit c5693809503c82a668b237efc691cdf1e9a9ed57[m
+Author: Laercio Souza Damacena <laerciosdamacena2006@gmail.com>
+Date:   Thu Aug 21 17:20:02 2025 -0300
+
+    Construindo interface das telas
+
+[33mcommit 2c9fe3bca7589aa67aa065edd8c8c54b430c0385[m
+Author: Laerciodmc7 <Laerciosdamacena2006@gmail.com>
+Date:   Thu Aug 21 14:52:07 2025 -0300
+
+    Definindo classe a Abstract / refatorando classes da camada de modelo / redefinindo interface das telas
+
+[33mcommit dbc3c728a3a2d4e948b55ddd9fd5f2bd9728cca0[m
+Author: Laerciodmc7 <Laerciosdamacena2006@gmail.com>
+Date:   Sun Aug 17 22:55:42 2025 -0300
+
+    update
+
+[33mcommit 644082f4d4750a465f7910810f5134c69ea33f9b[m
+Author: Laerciodmc7 <Laerciosdamacena2006@gmail.com>
+Date:   Sun Aug 17 17:10:36 2025 -0300
+
+    Adicionando classes/construtores/metodos à camada de modelo
+
+[33mcommit b4c2d6299b9fca81910b7a94351ce014a1528948[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Mon Aug 11 22:42:23 2025 +0000
+
+    Initial commit
