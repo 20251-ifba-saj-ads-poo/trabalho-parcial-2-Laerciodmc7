@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.LoginController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="786.0" style="-fx-background-color: #2d2d44;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.LoginController">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -27,72 +27,68 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d2d44;">
          <children>
-                <VBox alignment="CENTER" prefHeight="493.0" prefWidth="399.0" style="-fx-background-color: #E8F1FA;" HBox.hgrow="ALWAYS">
+                <VBox alignment="CENTER" prefHeight="493.0" prefWidth="399.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121ab);" HBox.hgrow="ALWAYS">
                <HBox.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
                </HBox.margin>
                <children>
-                        <AnchorPane prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #E8F1FA;" VBox.vgrow="ALWAYS">
-                            <children>
-                                <Label layoutX="88.0" text="Biblioteca " AnchorPane.topAnchor="0.0">
-                                    <font>
-                                        <Font size="27.0" />
-                                    </font>
-                                </Label>
-                                <Label layoutX="88.0" layoutY="30.0" prefHeight="39.0" prefWidth="96.0" text="Virtual">
-                                    <font>
-                                        <Font size="27.0" />
-                                    </font>
-                                </Label>
-                                <ImageView id="preserveRatio" fitHeight="81.0" fitWidth="98.0" layoutX="7.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="0.0">
-                                    <image>
-                                        <Image url="@assets/LogoLoginPhotoPea.png" />
-                                    </image>
-                                </ImageView>
-                            </children>
-                        </AnchorPane>
-                          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="504.0" prefWidth="393.0" style="-fx-background-color: #E8F1FA;" VBox.vgrow="ALWAYS">
+                          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="504.0" prefWidth="393.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" VBox.vgrow="ALWAYS">
                               <children>
-                                  <Label layoutX="57.0" layoutY="73.0" prefHeight="32.0" prefWidth="96.0" text="Entrar" textFill="#1b2e59" AnchorPane.bottomAnchor="318.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="224.0" AnchorPane.topAnchor="73.0">
+                                  <Label layoutX="68.0" layoutY="124.0" prefHeight="32.0" prefWidth="96.0" text="Entrar" textFill="#1b2e59">
                                       <font>
                                           <Font name="SansSerif Bold" size="26.0" />
                                       </font>
                                   </Label>
-                                  <TextField fx:id="txUsuario" layoutX="58.0" layoutY="119.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário" stylesheets="@assets/style.css" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="119.0" />
-                                  <PasswordField fx:id="txSenha" layoutX="58.0" layoutY="179.0" prefHeight="35.0" prefWidth="245.0" promptText="senha" stylesheets="@assets/style.css" AnchorPane.bottomAnchor="209.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="179.0" />
-                                  <Button defaultButton="true" layoutX="71.0" layoutY="233.0" mnemonicParsing="false" onAction="#entrar" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: #1976D2;" styleClass="btn-login" stylesheets="@assets/style.css" text="Entrar" textFill="WHITE" AnchorPane.bottomAnchor="146.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="233.0">
+                                  <TextField fx:id="txUsuario" layoutX="68.0" layoutY="172.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário" style="-fx-background-color: #2d2d44;" stylesheets="@assets/style.css" />
+                                  <PasswordField fx:id="txSenha" layoutX="68.0" layoutY="235.0" prefHeight="35.0" prefWidth="245.0" promptText="senha" style="-fx-background-color: #2d2d44;" stylesheets="@assets/style.css" />
+                                  <Button defaultButton="true" layoutX="81.0" layoutY="293.0" mnemonicParsing="false" onAction="#entrar" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: #1976D2;" styleClass="btn-login" stylesheets="@assets/style.css" text="Entrar" textFill="WHITE">
                                       <font>
                                           <Font size="20.0" />
                                       </font>
                                   </Button>
-                                  <Hyperlink fx:id="txCadUsuario" layoutX="88.0" layoutY="285.0" onAction="#carregaTelaCadastro" text="Não tem conta? Cadastre-se" textFill="#1565c0" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="285.0">
+                                  <Hyperlink fx:id="txCadUsuario" layoutX="98.0" layoutY="337.0" onAction="#carregaTelaCadastro" prefHeight="63.0" prefWidth="186.0" text="Não tem conta? Cadastre-se" textFill="#1565c0">
                                       <font>
                                           <Font size="14.0" />
                                       </font>
                                   </Hyperlink>
+                                <ImageView id="preserveRatio" fitHeight="81.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <image>
+                                        <Image url="@assets/LogoLoginPhotoPea.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="81.0" layoutY="6.0" text="Biblioteca " textFill="#1b2e59" AnchorPane.topAnchor="6.0">
+                                    <font>
+                                        <Font size="27.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="81.0" layoutY="36.0" prefHeight="39.0" prefWidth="96.0" text="Virtual" textFill="#1b2e59">
+                                    <font>
+                                        <Font size="27.0" />
+                                    </font>
+                                </Label>
                               </children>
                           </AnchorPane>
                </children>
                 </VBox>
          </children>
       </HBox>
-        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #F5F5F5;" GridPane.columnIndex="1">
+        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #2d2d44;" GridPane.columnIndex="1">
             <children>
-                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E8F1FA;">
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);">
                     <children>
-                        <Label layoutX="42.0" layoutY="103.0" text="A sua estante virtual" textFill="#1b2e59" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="92.0" AnchorPane.topAnchor="103.0">
+                        <Label layoutX="42.0" layoutY="103.0" prefHeight="39.0" prefWidth="304.0" text="A sua estante virtual" textFill="#1b2e59">
                             <font>
                                 <Font name="System Bold" size="27.0" />
                             </font>
                         </Label>
-                        <Label layoutX="42.0" layoutY="137.0" text="Sempre com você" textFill="#1b2e59" AnchorPane.leftAnchor="42.0">
+                        <Label layoutX="42.0" layoutY="137.0" text="Sempre com você" textFill="#1b2e59">
                             <font>
                                 <Font name="System Bold" size="27.0" />
                             </font>
                         </Label>
-                        <ImageView id="preserveRatio" fitHeight="259.0" fitWidth="405.0" layoutX="2.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #E8F1FA;" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.5" AnchorPane.topAnchor="176.0">
+                        <ImageView fitHeight="259.0" fitWidth="405.0" layoutX="2.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #E8F1FA;">
                             <image>
                                 <Image url="@assets/EstanteDeLivrosPhotoPea.png" />
                             </image>

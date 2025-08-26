@@ -12,13 +12,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E8F1FA;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane layoutX="1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="373.0">
          <left>
             <AnchorPane prefHeight="503.0" prefWidth="324.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="bntHome" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHome" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Home" textFill="#1b2e59">
+                  <Button fx:id="bntSair1" alignment="TOP_LEFT" layoutX="24.0" layoutY="330.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#voltarTelaLogin" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Sair" textFill="WHITE">
                      <padding>
                         <Insets bottom="5.0" left="10.0" />
                      </padding>
@@ -36,7 +36,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="bntMeusEmprestimos" alignment="TOP_LEFT" layoutY="43.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showEmprestimos" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Meus emprestimos" textFill="#1b2e59">
+                  <Button fx:id="bntSistema1" alignment="TOP_LEFT" layoutX="24.0" layoutY="255.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHome" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Sistema" textFill="WHITE">
                      <padding>
                         <Insets bottom="5.0" left="10.0" />
                      </padding>
@@ -54,7 +54,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="bntMeuPerfil" alignment="TOP_LEFT" layoutY="86.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showMeuPerfil" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Meu perfil" textFill="#1b2e59">
+                  <Button fx:id="bntMeuPerfil1" alignment="TOP_LEFT" layoutX="24.0" layoutY="180.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showMeuPerfil" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Meu perfil" textFill="WHITE">
                      <padding>
                         <Insets bottom="5.0" left="10.0" />
                      </padding>
@@ -72,7 +72,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="bntSistema" alignment="TOP_LEFT" layoutY="129.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHome" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Sistema" textFill="#1b2e59">
+                  <Button fx:id="bntMeusEmprestimos1" alignment="TOP_LEFT" layoutX="24.0" layoutY="106.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showEmprestimos" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Meus emprestimos" textFill="WHITE">
                      <padding>
                         <Insets bottom="5.0" left="10.0" />
                      </padding>
@@ -90,7 +90,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="bntSair" alignment="TOP_LEFT" layoutY="172.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#voltarTelaLogin" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Sair" textFill="#1b2e59">
+                  <Button fx:id="bntHome1" alignment="TOP_LEFT" layoutX="24.0" layoutY="34.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHome" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Home" textFill="WHITE">
                      <padding>
                         <Insets bottom="5.0" left="10.0" />
                      </padding>
@@ -112,14 +112,14 @@
             </AnchorPane>
          </left>
          <top>
-            <AnchorPane prefHeight="105.0" prefWidth="342.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="86.0" prefWidth="373.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="100.0" fitWidth="292.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0">
+                  <ImageView fitHeight="100.0" fitWidth="292.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/LogoLoginPhotoPea.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="111.0" layoutY="26.0" prefHeight="49.0" prefWidth="235.0" text="Biblioteca Digital" textFill="#1b2e59">
+                  <Label layoutX="93.0" layoutY="27.0" prefHeight="49.0" prefWidth="235.0" text="Biblioteca Digital" textFill="#1d408d">
                      <font>
                         <Font size="30.0" />
                      </font>
@@ -128,7 +128,7 @@
             </AnchorPane>
          </top>
       </BorderPane>
-      <TableView layoutX="374.0" layoutY="52.0" prefHeight="219.0" prefWidth="482.0">
+      <TableView layoutX="374.0" layoutY="52.0" prefHeight="219.0" prefWidth="482.0" style="-fx-background-color: darkgrey;">
         <columns>
           <TableColumn fx:id="ColunaTitulo" text="Titulo" />
           <TableColumn fx:id="ColunaAutor" text="Autor" />
@@ -138,7 +138,7 @@
             <TableColumn fx:id="ColunaID" text="ID" />
         </columns>
       </TableView>
-      <TableView layoutX="374.0" layoutY="315.0" prefHeight="219.0" prefWidth="482.0">
+      <TableView layoutX="374.0" layoutY="315.0" prefHeight="219.0" prefWidth="482.0" style="-fx-background-color: darkgrey;">
          <columns>
             <TableColumn fx:id="ColunaLivro" prefWidth="86.0" text="Livro" />
             <TableColumn fx:id="ColunaDataEmprestimo" prefWidth="115.0" text="Data emprestimo" />
@@ -147,8 +147,8 @@
             <TableColumn fx:id="ColunaIdEmprestimo" prefWidth="59.0" text="ID" />
          </columns>
       </TableView>
-      <Label layoutX="374.0" layoutY="285.0" prefHeight="30.0" prefWidth="158.0" text="Informações de emprestimo" textFill="#1b2e59" />
-      <Label layoutX="374.0" layoutY="22.0" prefHeight="30.0" prefWidth="158.0" text="Livros emprestados" textFill="#1b2e59" />
+      <Label layoutX="374.0" layoutY="285.0" prefHeight="30.0" prefWidth="158.0" text="Informações de emprestimo" textFill="#1d408d" />
+      <Label layoutX="374.0" layoutY="22.0" prefHeight="30.0" prefWidth="158.0" text="Livros emprestados" textFill="#1d408d" />
       <Button layoutX="584.0" layoutY="553.0" mnemonicParsing="false" style="-fx-background-color: #1976D2 #1976D2;" styleClass="btn-login" stylesheets="@assets/style.css" text="Devolver" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />

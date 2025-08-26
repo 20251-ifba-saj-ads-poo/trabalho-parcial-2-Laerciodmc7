@@ -11,16 +11,16 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="masterPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="500.0" minWidth="800.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E8F1FA;" styleClass="main" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.MenuController">
+<BorderPane fx:id="masterPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="500.0" minWidth="800.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="main" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.MenuController">
    <top>
-      <AnchorPane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: #E8F1FA;" styleClass="top" stylesheets="@assets/style.css" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="top" stylesheets="@assets/style.css" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="100.0" fitWidth="292.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
                <image>
                   <Image url="@assets/LogoLoginPhotoPea.png" />
                </image>
             </ImageView>
-            <Label layoutX="111.0" layoutY="26.0" prefHeight="49.0" prefWidth="276.0" text="Biblioteca Digital">
+            <Label layoutX="111.0" layoutY="26.0" prefHeight="49.0" prefWidth="276.0" text="Biblioteca Digital" textFill="WHITE">
                <font>
                   <Font size="30.0" />
                </font>
@@ -30,98 +30,100 @@
    <center>
       <AnchorPane prefHeight="499.0" prefWidth="570.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="24.0" layoutY="50.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="352.0" AnchorPane.topAnchor="50.0">
+            <AnchorPane layoutX="71.0" layoutY="50.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar" stylesheets="@assets/style.css">
                <children>
-                  <Label layoutX="46.0" layoutY="109.0" prefHeight="21.0" prefWidth="83.0" text="Explore o" textFill="#1b2e59">
+                  <Label layoutX="53.0" layoutY="136.0" prefHeight="21.0" prefWidth="76.0" text="Explore o" textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="46.0" layoutY="130.0" prefHeight="19.0" prefWidth="118.0" text="nosso sistema" textFill="#1b2e59" AnchorPane.rightAnchor="36.0">
+                  <Label layoutX="53.0" layoutY="157.0" prefHeight="19.0" prefWidth="118.0" text="nosso sistema" textFill="#1b2e59" AnchorPane.rightAnchor="29.0">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="31.0" layoutY="77.0" prefHeight="32.0" prefWidth="148.0" text="Acervo digital" textFill="#1b2e59">
+                  <Label layoutX="28.0" layoutY="115.0" prefHeight="32.0" prefWidth="148.0" text="Acervo digital" textFill="#1b2e59" AnchorPane.bottomAnchor="53.0">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="245.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="244.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="50.0">
+            <AnchorPane layoutX="301.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="avatar">
                <children>
-                  <Label layoutX="73.0" layoutY="70.0" text="Busca">
+                  <Label layoutX="62.0" layoutY="87.0" text="Busca">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="100.0" prefHeight="21.0" prefWidth="105.0" text="Faça busca por" textFill="#1b2e59">
+                  <Label layoutX="48.0" layoutY="117.0" prefHeight="21.0" prefWidth="105.0" text="Faça busca por" textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="121.0" prefHeight="21.0" prefWidth="105.0" text="autor, titulo ou " textFill="#1b2e59">
+                  <Label layoutX="48.0" layoutY="138.0" prefHeight="21.0" prefWidth="105.0" text="autor, titulo ou " textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="54.0" layoutY="142.0" prefHeight="21.0" prefWidth="105.0" text="categoria..." textFill="#1b2e59">
+                  <Label layoutX="48.0" layoutY="159.0" prefHeight="21.0" prefWidth="105.0" text="categoria..." textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="24.0" layoutY="267.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="352.0" AnchorPane.topAnchor="267.0">
-               <children>
-                  <Label layoutX="36.0" layoutY="77.0" text="emprestimos" textFill="#1b2e59">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="33.0" layoutY="113.0" text="Consulte a sua lista" textFill="#1b2e59">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="39.0" layoutY="134.0" prefHeight="21.0" prefWidth="115.0" text="de emprestimos" textFill="#1b2e59">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="245.0" layoutY="267.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="132.0" AnchorPane.topAnchor="267.0">
-               <children>
-                  <Label layoutX="35.0" layoutY="72.0" text="Meu perfil" textFill="#1b2e59">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="31.0" layoutY="110.0" text="Configure seu perfil" textFill="#1b2e59">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <TextField fx:id="txPesquisar" layoutX="63.0" layoutY="2.0" prefHeight="33.0" prefWidth="382.0" promptText="Pesquisar">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor></TextField>
-            <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="24.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="508.0" AnchorPane.topAnchor="-3.0">
+            <TextField fx:id="txPesquisar" layoutX="105.0" layoutY="6.0" prefHeight="33.0" prefWidth="382.0" promptText="Pesquisar" />
+            <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="61.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="456.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="0.0">
                <image>
                   <Image url="@assets/HomeIcon.png" />
                </image>
             </ImageView>
+            <AnchorPane layoutX="71.0" layoutY="273.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar">
+               <children>
+                  <Label layoutX="27.0" layoutY="105.0" text="Edição de Perfil" textFill="#1b2e59">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="47.0" layoutY="135.0" text="Edite seu perfil" textFill="#1b2e59">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="47.0" layoutY="156.0" prefHeight="21.0" prefWidth="106.0" text="quando quiser" textFill="#1b2e59">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="301.0" layoutY="273.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar">
+               <children>
+                  <Label layoutX="36.0" layoutY="100.0" text="emprestimos" textFill="#1b2e59">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="131.0" text="Consulte a sua lista" textFill="#1b2e59">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="152.0" prefHeight="21.0" prefWidth="115.0" text="de emprestimos" textFill="#1b2e59">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
    </center>
    <left>
       <AnchorPane prefHeight="322.0" prefWidth="324.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="bntSair" alignment="TOP_LEFT" layoutY="172.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#voltarTelaLogin" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Sair" textFill="#1b2e59">
+            <Button fx:id="bntSair" alignment="TOP_LEFT" layoutX="14.0" layoutY="320.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#voltarTelaLogin" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Sair" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="10.0" />
                </padding>
@@ -139,7 +141,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="bntSistema" alignment="TOP_LEFT" layoutY="129.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHome" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Sistema" textFill="#1b2e59">
+            <Button fx:id="bntSistema" alignment="TOP_LEFT" layoutX="14.0" layoutY="245.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHome" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Sistema" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="10.0" />
                </padding>
@@ -157,7 +159,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="bntMeuPerfil" alignment="TOP_LEFT" layoutY="86.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showMeuPerfil" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Meu perfil" textFill="#1b2e59">
+            <Button fx:id="bntMeuPerfil" alignment="TOP_LEFT" layoutX="14.0" layoutY="170.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showMeuPerfil" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Meu perfil" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="10.0" />
                </padding>
@@ -175,7 +177,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="bntMeusEmprestimos" alignment="TOP_LEFT" layoutY="43.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showEmprestimos" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Meus emprestimos" textFill="#1b2e59">
+            <Button fx:id="bntMeusEmprestimos" alignment="TOP_LEFT" layoutX="14.0" layoutY="96.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showEmprestimos" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Meus emprestimos" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="10.0" />
                </padding>
@@ -193,7 +195,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="bntHome" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHome" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: #E8F1FA;" styleClass="btn-menu-selected" stylesheets="@assets/style.css" text="Home" textFill="#1b2e59">
+            <Button fx:id="bntHome" alignment="TOP_LEFT" layoutX="14.0" layoutY="24.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showHome" prefHeight="43.0" prefWidth="276.0" style="-fx-background-color: linear-gradient(to bottom, #1c1c2e, #12121b);" styleClass="avatar" stylesheets="@assets/style.css" text="Home" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="10.0" />
                </padding>
