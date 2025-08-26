@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -93,12 +94,22 @@
          <font>
             <Font size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button fx:id="bntCancelar" layoutX="488.0" layoutY="460.0" mnemonicParsing="false" onAction="#cancelarEdicao" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: grey;" styleClass="btn-cancelar" stylesheets="@assets/style.css" text="Cancelar" textFill="WHITE">
          <font>
             <Font size="23.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Button fx:id="bntvoltar" layoutX="25.0" layoutY="552.0" mnemonicParsing="false" onAction="#voltarMenu" style="-fx-background-color: grey;" styleClass="btn-cancelar" stylesheets="@assets/style.css" text="Voltar" textFill="WHITE" />
+      <Button fx:id="bntvoltar" layoutX="25.0" layoutY="552.0" mnemonicParsing="false" onAction="#voltarMenu" style="-fx-background-color: grey;" styleClass="btn-cancelar" stylesheets="@assets/style.css" text="Voltar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>
