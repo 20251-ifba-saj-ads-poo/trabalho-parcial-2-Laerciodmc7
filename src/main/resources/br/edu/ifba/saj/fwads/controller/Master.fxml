@@ -30,26 +30,26 @@
    <center>
       <AnchorPane prefHeight="499.0" prefWidth="570.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="24.0" layoutY="50.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;">
+            <AnchorPane layoutX="24.0" layoutY="50.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="352.0" AnchorPane.topAnchor="50.0">
                <children>
                   <Label layoutX="46.0" layoutY="109.0" prefHeight="21.0" prefWidth="83.0" text="Explore o" textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="46.0" layoutY="130.0" prefHeight="19.0" prefWidth="118.0" text="nosso sistema" textFill="#1b2e59">
+                  <Label layoutX="46.0" layoutY="130.0" prefHeight="19.0" prefWidth="118.0" text="nosso sistema" textFill="#1b2e59" AnchorPane.rightAnchor="36.0">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="22.0" layoutY="77.0" prefHeight="32.0" prefWidth="167.0" text="Acervo digital" textFill="#1b2e59">
+                  <Label layoutX="31.0" layoutY="77.0" prefHeight="32.0" prefWidth="148.0" text="Acervo digital" textFill="#1b2e59">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="245.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;">
+            <AnchorPane layoutX="245.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="244.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="50.0">
                <children>
                   <Label layoutX="73.0" layoutY="70.0" text="Busca">
                      <font>
@@ -73,7 +73,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="24.0" layoutY="267.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;">
+            <AnchorPane layoutX="24.0" layoutY="267.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="352.0" AnchorPane.topAnchor="267.0">
                <children>
                   <Label layoutX="36.0" layoutY="77.0" text="emprestimos" textFill="#1b2e59">
                      <font>
@@ -92,7 +92,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="245.0" layoutY="267.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;">
+            <AnchorPane layoutX="245.0" layoutY="267.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="132.0" AnchorPane.topAnchor="267.0">
                <children>
                   <Label layoutX="35.0" layoutY="72.0" text="Meu perfil" textFill="#1b2e59">
                      <font>
@@ -110,7 +110,7 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></TextField>
-            <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="24.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="24.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="508.0" AnchorPane.topAnchor="-3.0">
                <image>
                   <Image url="@assets/HomeIcon.png" />
                </image>

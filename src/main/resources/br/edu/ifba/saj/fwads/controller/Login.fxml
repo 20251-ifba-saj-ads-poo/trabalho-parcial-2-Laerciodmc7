@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
@@ -10,6 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
@@ -24,34 +27,16 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
-        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: grey;">
-            <children>
-                <VBox alignment="CENTER" prefHeight="493.0" prefWidth="399.0" style="-fx-background-color: #F5F5F5;">
-                    <children>
-                        <AnchorPane prefHeight="501.0" prefWidth="393.0" style="-fx-background-color: #E8F1FA;">
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+                <VBox alignment="CENTER" prefHeight="493.0" prefWidth="399.0" style="-fx-background-color: #E8F1FA;" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+               <children>
+                        <AnchorPane prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #E8F1FA;" VBox.vgrow="ALWAYS">
                             <children>
-                                <AnchorPane layoutX="-3.0" layoutY="-5.0" maxHeight="514.0" maxWidth="393.0" prefHeight="506.0" prefWidth="393.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                    <children>
-                                        <Label layoutX="57.0" layoutY="112.0" prefHeight="32.0" prefWidth="96.0" text="Entrar" textFill="#1b2e59">
-                                            <font>
-                                                <Font name="SansSerif Bold" size="26.0" />
-                                            </font>
-                                        </Label>
-                                        <TextField fx:id="txUsuario" layoutX="57.0" layoutY="165.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário" stylesheets="@assets/style.css" />
-                                        <PasswordField fx:id="txSenha" layoutX="57.0" layoutY="222.0" prefHeight="35.0" prefWidth="245.0" promptText="senha" stylesheets="@assets/style.css" />
-                                        <Button defaultButton="true" layoutX="70.0" layoutY="276.0" mnemonicParsing="false" onAction="#entrar" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: #1976D2;" styleClass="btn-login" stylesheets="@assets/style.css" text="Entrar" textFill="WHITE">
-                                            <font>
-                                                <Font size="20.0" />
-                                            </font>
-                                        </Button>
-                                        <Hyperlink fx:id="txCadUsuario" layoutX="87.0" layoutY="337.0" onAction="#carregaTelaCadastro" text="Não tem conta? Cadastre-se" textFill="#1565c0">
-                                            <font>
-                                                <Font size="14.0" />
-                                            </font>
-                                        </Hyperlink>
-                                    </children>
-                                </AnchorPane>
-                                <Label layoutX="88.0" text="Biblioteca ">
+                                <Label layoutX="88.0" text="Biblioteca " AnchorPane.topAnchor="0.0">
                                     <font>
                                         <Font size="27.0" />
                                     </font>
@@ -61,27 +46,48 @@
                                         <Font size="27.0" />
                                     </font>
                                 </Label>
-                                <ImageView id="preserveRatio" fitHeight="81.0" fitWidth="98.0" layoutX="7.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView id="preserveRatio" fitHeight="81.0" fitWidth="98.0" layoutX="7.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="0.0">
                                     <image>
                                         <Image url="@assets/LogoLoginPhotoPea.png" />
                                     </image>
                                 </ImageView>
                             </children>
                         </AnchorPane>
-                    </children>
+                          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="504.0" prefWidth="393.0" style="-fx-background-color: #E8F1FA;" VBox.vgrow="ALWAYS">
+                              <children>
+                                  <Label layoutX="57.0" layoutY="73.0" prefHeight="32.0" prefWidth="96.0" text="Entrar" textFill="#1b2e59" AnchorPane.bottomAnchor="318.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="224.0" AnchorPane.topAnchor="73.0">
+                                      <font>
+                                          <Font name="SansSerif Bold" size="26.0" />
+                                      </font>
+                                  </Label>
+                                  <TextField fx:id="txUsuario" layoutX="58.0" layoutY="119.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário" stylesheets="@assets/style.css" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="119.0" />
+                                  <PasswordField fx:id="txSenha" layoutX="58.0" layoutY="179.0" prefHeight="35.0" prefWidth="245.0" promptText="senha" stylesheets="@assets/style.css" AnchorPane.bottomAnchor="209.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="179.0" />
+                                  <Button defaultButton="true" layoutX="71.0" layoutY="233.0" mnemonicParsing="false" onAction="#entrar" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: #1976D2;" styleClass="btn-login" stylesheets="@assets/style.css" text="Entrar" textFill="WHITE" AnchorPane.bottomAnchor="146.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="233.0">
+                                      <font>
+                                          <Font size="20.0" />
+                                      </font>
+                                  </Button>
+                                  <Hyperlink fx:id="txCadUsuario" layoutX="88.0" layoutY="285.0" onAction="#carregaTelaCadastro" text="Não tem conta? Cadastre-se" textFill="#1565c0" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="285.0">
+                                      <font>
+                                          <Font size="14.0" />
+                                      </font>
+                                  </Hyperlink>
+                              </children>
+                          </AnchorPane>
+               </children>
                 </VBox>
-            </children>
-        </StackPane>
+         </children>
+      </HBox>
         <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #F5F5F5;" GridPane.columnIndex="1">
             <children>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E8F1FA;">
                     <children>
-                        <Label layoutX="42.0" layoutY="103.0" text="A sua estante virtual" textFill="#1b2e59">
+                        <Label layoutX="42.0" layoutY="103.0" text="A sua estante virtual" textFill="#1b2e59" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="92.0" AnchorPane.topAnchor="103.0">
                             <font>
                                 <Font name="System Bold" size="27.0" />
                             </font>
                         </Label>
-                        <Label layoutX="42.0" layoutY="137.0" text="Sempre com você" textFill="#1b2e59">
+                        <Label layoutX="42.0" layoutY="137.0" text="Sempre com você" textFill="#1b2e59" AnchorPane.leftAnchor="42.0">
                             <font>
                                 <Font name="System Bold" size="27.0" />
                             </font>
@@ -90,6 +96,9 @@
                             <image>
                                 <Image url="@assets/EstanteDeLivrosPhotoPea.png" />
                             </image>
+                     <viewport>
+                        <Rectangle2D minX="405.0" minY="259.0" />
+                     </viewport>
                         </ImageView>
                     </children>
                 </AnchorPane>
