@@ -32,17 +32,17 @@
          <children>
             <AnchorPane layoutX="71.0" layoutY="50.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar" stylesheets="@assets/style.css">
                <children>
-                  <Label layoutX="53.0" layoutY="136.0" prefHeight="21.0" prefWidth="76.0" text="Explore o" textFill="#1b2e59">
+                  <Label layoutX="42.0" layoutY="136.0" prefHeight="21.0" prefWidth="130.0" text="Explore o nosso" textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="53.0" layoutY="157.0" prefHeight="19.0" prefWidth="118.0" text="nosso sistema" textFill="#1b2e59" AnchorPane.rightAnchor="29.0">
+                  <Label layoutX="53.0" layoutY="157.0" prefHeight="19.0" prefWidth="125.0" text="bilbioteca digital" textFill="#1b2e59" AnchorPane.rightAnchor="32.0">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="28.0" layoutY="115.0" prefHeight="32.0" prefWidth="148.0" text="Acervo digital" textFill="#1b2e59" AnchorPane.bottomAnchor="53.0">
+                  <Label layoutX="18.0" layoutY="104.0" prefHeight="32.0" prefWidth="164.0" text="Acervo digital" textFill="#1b2e59" AnchorPane.bottomAnchor="64.0">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -51,17 +51,17 @@
             </AnchorPane>
             <AnchorPane layoutX="301.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="avatar">
                <children>
-                  <Label layoutX="62.0" layoutY="87.0" text="Busca">
+                  <Label layoutX="62.0" layoutY="87.0" text="Busca" textFill="#1b2e59">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="48.0" layoutY="117.0" prefHeight="21.0" prefWidth="105.0" text="Faça busca por" textFill="#1b2e59">
+                  <Label layoutX="48.0" layoutY="117.0" prefHeight="21.0" prefWidth="123.0" text="Faça busca por" textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="48.0" layoutY="138.0" prefHeight="21.0" prefWidth="105.0" text="autor, titulo ou " textFill="#1b2e59">
+                  <Label layoutX="48.0" layoutY="138.0" prefHeight="21.0" prefWidth="125.0" text="autor, titulo ou " textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -73,34 +73,15 @@
                   </Label>
                </children>
             </AnchorPane>
-            <TextField fx:id="txPesquisar" layoutX="105.0" layoutY="6.0" prefHeight="33.0" prefWidth="382.0" promptText="Pesquisar" />
+            <TextField fx:id="txPesquisar" layoutX="105.0" layoutY="6.0" prefHeight="33.0" prefWidth="382.0" promptText="Pesquisar" style="-fx-background-color: #2d2d44; fx-prompt-text-fill: #999; -fx-text-fill: white;" />
             <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="61.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="456.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="0.0">
                <image>
                   <Image url="@assets/HomeIcon.png" />
                </image>
             </ImageView>
-            <AnchorPane layoutX="71.0" layoutY="273.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar">
-               <children>
-                  <Label layoutX="27.0" layoutY="105.0" text="Edição de Perfil" textFill="#1b2e59">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="47.0" layoutY="135.0" text="Edite seu perfil" textFill="#1b2e59">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="47.0" layoutY="156.0" prefHeight="21.0" prefWidth="106.0" text="quando quiser" textFill="#1b2e59">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
             <AnchorPane layoutX="301.0" layoutY="273.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar">
                <children>
-                  <Label layoutX="36.0" layoutY="100.0" text="emprestimos" textFill="#1b2e59">
+                  <Label layoutX="28.0" layoutY="100.0" text="emprestimos" textFill="#1b2e59">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -110,9 +91,28 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="39.0" layoutY="152.0" prefHeight="21.0" prefWidth="115.0" text="de emprestimos" textFill="#1b2e59">
+                  <Label layoutX="39.0" layoutY="152.0" prefHeight="21.0" prefWidth="135.0" text="de emprestimos" textFill="#1b2e59">
                      <font>
                         <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="71.0" layoutY="273.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar" stylesheets="@assets/style.css">
+               <children>
+                  <Label layoutX="36.0" layoutY="136.0" prefHeight="21.0" prefWidth="126.0" text="Edite seu perfil" textFill="#1b2e59">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="157.0" prefHeight="19.0" prefWidth="126.0" text="quando quiser" textFill="#1b2e59" AnchorPane.rightAnchor="25.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="115.0" prefHeight="32.0" prefWidth="144.0" text="Editar perfil" textFill="#1b2e59" AnchorPane.bottomAnchor="63.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
                </children>

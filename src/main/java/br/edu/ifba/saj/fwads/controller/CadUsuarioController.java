@@ -41,16 +41,21 @@ public class CadUsuarioController {
         if(!txCriaSenha.getText().equals(txConfirmaSenha.getText()) || txCriaSenha.getText().equals("")){
             new Alert(Alert.AlertType.ERROR, "Erro ao inserir senhas").show();
         }
-    else {
+
+        else if(txNomeCompleto.getText().equals("") || txUserName.getText().equals("") || dpDataNascimento.getValue() == null
+                || txCpf.getText().equals("") || txCriaSenha.getText().equals("") ){
+            new Alert(Alert.AlertType.ERROR, "Todos os campos devem ser preenchidos").show();
+        }
+        else {
             novoUsuario = new Usuario(txNomeCompleto.getText(), txUserName.getText(), dpDataNascimento.getValue(), txCpf.getText(), txCriaSenha.getText(), new ArrayList<>(), 3);
             Biblioteca.setUsuarioLogado(novoUsuario);
             new Alert(Alert.AlertType.INFORMATION, "Usuário criado com sucesso").showAndWait();
-            App.setRoot("/br/edu/ifba/saj/fwads/controller/Master.fxml");
+            App.setRoot("controller/Master.fxml");
         }
     }
 
     public void cancelar(ActionEvent event){
-        App.setRoot("resources/br/edu/ifba/saj/fwads/controller/Login.fxml");
+        App.setRoot("controller/Login.fxml");
     }
 
 }

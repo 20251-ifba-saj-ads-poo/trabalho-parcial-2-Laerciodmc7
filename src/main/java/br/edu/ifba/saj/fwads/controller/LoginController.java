@@ -17,10 +17,10 @@ import javafx.scene.control.Alert.AlertType;
 
 public class LoginController {
 
-    @FXML // fx:id="txSenha"
+    @FXML
     private PasswordField txSenha; // Value injected by FXMLLoader
 
-    @FXML // fx:id="txUsuario"
+    @FXML
     private TextField txUsuario; // Value injected by FXMLLoader
 
     @FXML

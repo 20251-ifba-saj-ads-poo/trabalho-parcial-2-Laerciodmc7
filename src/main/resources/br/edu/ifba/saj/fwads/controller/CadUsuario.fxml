@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -24,6 +25,9 @@
                <font>
                   <Font size="20.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Label layoutX="89.0" layoutY="14.0" text="Biblioteca " textFill="#1b2e59">
                <font>
@@ -40,47 +44,50 @@
                   <Font size="27.0" />
                </font>
             </Label>
-            <Label layoutX="27.0" layoutY="187.0" prefHeight="39.0" prefWidth="133.0" text="Nome completo" textFill="GREY">
+            <Label layoutX="27.0" layoutY="187.0" prefHeight="39.0" prefWidth="150.0" text="Nome completo" textFill="GREY">
                <font>
-                  <Font size="16.0" />
+                  <Font name="SansSerif Bold" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="27.0" layoutY="236.0" prefHeight="39.0" prefWidth="150.0" text="Nome de Usuário" textFill="GREY">
+            <Label layoutX="27.0" layoutY="236.0" prefHeight="39.0" prefWidth="162.0" text="Nome de Usuário" textFill="GREY">
                <font>
-                  <Font size="16.0" />
+                  <Font name="SansSerif Bold" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="27.0" layoutY="281.0" prefHeight="39.0" prefWidth="168.0" text="Data de nascimento" textFill="GREY">
+            <Label layoutX="27.0" layoutY="281.0" prefHeight="39.0" prefWidth="193.0" text="Data de nascimento" textFill="GREY">
                <font>
-                  <Font size="16.0" />
+                  <Font name="SansSerif Bold" size="16.0" />
                </font>
             </Label>
             <Label layoutX="525.0" layoutY="281.0" prefHeight="39.0" prefWidth="35.0" text="CPF" textFill="GREY">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="27.0" layoutY="327.0" prefHeight="39.0" prefWidth="64.0" text="Senha" textFill="GREY">
+            <Label layoutX="27.0" layoutY="327.0" prefHeight="39.0" prefWidth="142.0" text="Definir senha" textFill="GREY">
                <font>
-                  <Font size="16.0" />
+                  <Font name="SansSerif Bold" size="16.0" />
                </font>
             </Label>
-            <PasswordField fx:id="txCriaSenha" layoutX="94.0" layoutY="329.0" prefHeight="35.0" prefWidth="753.0" promptText="Defina uma senha" stylesheets="@assets/style.css" />
-            <Label layoutX="25.0" layoutY="372.0" prefHeight="39.0" prefWidth="142.0" text="Confirmar senha" textFill="GREY">
+            <PasswordField fx:id="txCriaSenha" layoutX="187.0" layoutY="329.0" prefHeight="35.0" prefWidth="660.0" promptText="Defina uma senha" style="-fx-background-color: #2d2d44; -fx-text-fill: -fx-text-fill;" stylesheets="@assets/style.css" />
+            <Label layoutX="25.0" layoutY="372.0" prefHeight="39.0" prefWidth="156.0" text="Confirmar senha" textFill="GREY">
                <font>
-                  <Font size="16.0" />
+                  <Font name="SansSerif Bold" size="16.0" />
                </font>
             </Label>
-            <PasswordField fx:id="txConfirmaSenha" layoutX="167.0" layoutY="374.0" prefHeight="35.0" prefWidth="679.0" promptText="Confirme sua senha" stylesheets="@assets/style.css" />
+            <PasswordField fx:id="txConfirmaSenha" layoutX="186.0" layoutY="374.0" prefHeight="35.0" prefWidth="660.0" promptText="Confirme sua senha" style="-fx-background-color: #2d2d44; -fx-text-fill: white;" stylesheets="@assets/style.css" />
             <Button defaultButton="false" layoutX="341.0" layoutY="509.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: darkgrey;" styleClass="btn-login" stylesheets="@assets/style.css" text="Cancelar" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <TextField fx:id="txNomeCompleto" editable="true" layoutX="189.0" layoutY="189.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome completo" stylesheets="@assets/style.css" />
-            <TextField fx:id="txUserName" layoutX="189.0" layoutY="236.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome de usuário" stylesheets="@assets/style.css" />
-            <TextField fx:id="txCpf" layoutX="560.0" layoutY="283.0" prefHeight="35.0" prefWidth="290.0" promptText="CPF" stylesheets="@assets/style.css" />
-            <DatePicker fx:id="dpDataNascimento" layoutX="201.0" layoutY="288.0" prefHeight="24.0" prefWidth="309.0" promptText="Formato: DD-MM-AAAA" />
+            <TextField fx:id="txNomeCompleto" editable="true" layoutX="189.0" layoutY="189.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome completo" style="-fx-background-color: #2d2d44; -fx-text-fill: white;" stylesheets="@assets/style.css" />
+            <TextField fx:id="txUserName" layoutX="189.0" layoutY="236.0" prefHeight="35.0" prefWidth="660.0" promptText="Nome de usuário" style="-fx-background-color: #2d2d44; -fx-text-fill: white;" stylesheets="@assets/style.css" />
+            <TextField fx:id="txCpf" layoutX="568.0" layoutY="283.0" prefHeight="35.0" prefWidth="282.0" promptText="CPF" style="-fx-background-color: #2d2d44; -fx-text-fill: white;" stylesheets="@assets/style.css" />
+            <DatePicker fx:id="dpDataNascimento" layoutX="228.0" layoutY="288.0" prefHeight="24.0" prefWidth="282.0" promptText="Formato: DD-MM-AAAA" style="-fx-background-color: #2d2d44;" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-59.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView id="preserveRatio" fitHeight="81.0" fitWidth="98.0" layoutX="1.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                <image>

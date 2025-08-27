@@ -27,15 +27,26 @@ public class MeuPerfilController {
     private TextField txShowUserName;
 
     @FXML
-    private Button bntEditarPerfil;
+    private Button bntEditar;
 
     @FXML
-    private Button bntCancelarEdicao;
+    private Button bntCancelar;
 
+    private boolean statusEdicao = false;
+
+    public boolean getStatusEdicao(){
+        return this.statusEdicao;
+    }
+
+    public void setStatusEdicao(boolean statusEdicao){
+        this.statusEdicao = statusEdicao;
+    }
+
+    Usuario usuario = Biblioteca.getUsuarioLogado();
 
     @FXML
     public void initialize(){
-        Usuario usuario = Biblioteca.getUsuarioLogado();
+
 
             txShowName.setText(usuario.getNome());
             txShowUserName.setText(usuario.getUserName());
@@ -47,12 +58,50 @@ public class MeuPerfilController {
 
     @FXML
     public void editarPerfil(ActionEvent event){
-        bntEditarPerfil.setText("Salvar");
+            if(!getStatusEdicao()) {
+                setStatusEdicao(true);
+                bntEditar.setText("Salvar");
+                txShowName.setEditable(true);
+                txShowUserName.setEditable(true);
+                txShowCPF.setEditable(true);
+                dpShowDate.setDisable(false);
+                txShowSenha.setEditable(true);
 
+                alteraCadastro();
+            }
+             else{
+                bntEditar.setText("Editar");
+                setStatusEdicao(false);
+                txShowName.setEditable(false);
+                txShowUserName.setEditable(false);
+                txShowCPF.setEditable(false);
+                dpShowDate.setDisable(true);
+                txShowSenha.setEditable(false);
+            }
     }
 
     @FXML
-    public void cancelarEdicao(){}
+    private void alteraCadastro(){
+        usuario.setNome(txShowName.getText());
+        usuario.setUserName(txShowUserName.getText());
+        usuario.setCpfUsuario(txShowCPF.getText());
+        usuario.setDataNascimento(dpShowDate.getValue());
+        usuario.setSenha(txShowSenha.getText());
+
+    }
+
+
+    @FXML
+    public void cancelarEdicao(){
+        bntEditar.setText("Editar");
+        setStatusEdicao(false);
+        txShowName.setEditable(false);
+        txShowUserName.setEditable(false);
+        txShowCPF.setEditable(false);
+        dpShowDate.setDisable(true);
+        txShowSenha.setEditable(false);
+
+    }
 
     @FXML
     private void voltarMenu(){

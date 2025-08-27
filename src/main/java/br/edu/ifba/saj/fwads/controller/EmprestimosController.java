@@ -56,10 +56,6 @@ public class EmprestimosController {
     @FXML
     private Button bntSistema;
 
-    @FXML
-    void showEmprestimos(ActionEvent event) {
-
-    }
 
     @FXML
     void showHome(ActionEvent event) {
@@ -76,4 +72,10 @@ public class EmprestimosController {
         App.setRoot("controller/Login.fxml");
     }
 
+    public void showInformaçõesDoSistema(ActionEvent event) {
+    }
+
+    public void showEmprestimos(ActionEvent event) {
+
+    }
 }
