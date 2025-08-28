@@ -35,6 +35,9 @@ public class CadUsuarioController {
         return novoUsuario;
     }
 
+    public PasswordField getTxConfirmaSenha(){ return this.txConfirmaSenha;}
+
+
 
     @FXML
     public void Criar(ActionEvent event) {

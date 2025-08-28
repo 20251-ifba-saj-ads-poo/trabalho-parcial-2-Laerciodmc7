@@ -47,6 +47,11 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="109.0" fitWidth="101.0" layoutX="47.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/EstanteDeLivrosPhotoPea.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane layoutX="301.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="avatar">
@@ -71,12 +76,17 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="109.0" fitWidth="101.0" layoutX="36.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/SearchIcon%20(1).png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <TextField fx:id="txPesquisar" layoutX="105.0" layoutY="6.0" prefHeight="33.0" prefWidth="382.0" promptText="Pesquisar" style="-fx-background-color: #2d2d44; fx-prompt-text-fill: #999; -fx-text-fill: white;" />
             <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="61.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="456.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="0.0">
                <image>
-                  <Image url="@assets/HomeIcon.png" />
+                  <Image url="@assets/SearchIcon%20(1).png" />
                </image>
             </ImageView>
             <AnchorPane layoutX="301.0" layoutY="273.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar">
@@ -96,6 +106,11 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="109.0" fitWidth="101.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/EmprestimosIcon.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane layoutX="71.0" layoutY="273.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;" styleClass="avatar" stylesheets="@assets/style.css">
@@ -115,6 +130,11 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="109.0" fitWidth="101.0" layoutX="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/MeuPerfilIcon.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </children>
@@ -133,7 +153,7 @@
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/HomeIcon.png" />
+                        <Image url="@assets/SairIcon.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -169,7 +189,7 @@
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/HomeIcon.png" />
+                        <Image url="@assets/MeuPerfilIcon.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -187,7 +207,7 @@
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/HomeIcon.png" />
+                        <Image url="@assets/EmprestimosIcon.png" />
                      </image>
                   </ImageView>
                </graphic>

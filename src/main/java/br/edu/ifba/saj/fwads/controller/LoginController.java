@@ -18,14 +18,23 @@ import javafx.scene.control.Alert.AlertType;
 public class LoginController {
 
     @FXML
-    private PasswordField txSenha; // Value injected by FXMLLoader
+    private PasswordField txSenha;
 
     @FXML
-    private TextField txUsuario; // Value injected by FXMLLoader
+    private TextField txUsuario;
 
     @FXML
     private Hyperlink txCadUsuario;
 
+    MeuPerfilController perfilController = new MeuPerfilController();
+
+    public MeuPerfilController getPerfilController() {
+        return perfilController;
+    }
+
+    public void setPerfilController(MeuPerfilController perfilController) {
+        this.perfilController = perfilController;
+    }
 
     @FXML
     public void entrar() {

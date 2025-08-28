@@ -42,8 +42,8 @@
                                           <Font name="SansSerif Bold" size="26.0" />
                                       </font>
                                   </Label>
-                                  <TextField fx:id="txUsuario" layoutX="68.0" layoutY="172.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário" style="-fx-background-color: #2d2d44; -fx-text-fill: white;" stylesheets="@assets/style.css" />
-                                  <PasswordField fx:id="txSenha" layoutX="68.0" layoutY="235.0" prefHeight="35.0" prefWidth="245.0" promptText="senha" style="-fx-background-color: #2d2d44; -fx-text-fill: white;" stylesheets="@assets/style.css" />
+                                  <TextField fx:id="txUsuario" layoutX="68.0" layoutY="172.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário" style="-fx-background-color: #2d2d44; -fx-text-fill: white; fx-prompt-text-fill: #999;" stylesheets="@assets/style.css" />
+                                  <PasswordField fx:id="txSenha" layoutX="68.0" layoutY="235.0" prefHeight="35.0" prefWidth="245.0" promptText="senha" style="-fx-background-color: #2d2d44; -fx-text-fill: white; fx-prompt-text-fill: #999;" stylesheets="@assets/style.css" />
                                   <Button defaultButton="true" layoutX="81.0" layoutY="293.0" mnemonicParsing="false" onAction="#entrar" prefHeight="44.0" prefWidth="219.0" style="-fx-background-color: #1976D2;" styleClass="btn-login" stylesheets="@assets/style.css" text="Entrar" textFill="WHITE">
                                       <font>
                                           <Font size="20.0" />
