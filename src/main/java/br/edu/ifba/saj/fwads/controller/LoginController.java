@@ -26,19 +26,9 @@ public class LoginController {
     @FXML
     private Hyperlink txCadUsuario;
 
-    MeuPerfilController perfilController = new MeuPerfilController();
-
-    public MeuPerfilController getPerfilController() {
-        return perfilController;
-    }
-
-    public void setPerfilController(MeuPerfilController perfilController) {
-        this.perfilController = perfilController;
-    }
-
     @FXML
     public void entrar() {
-        if (txUsuario.getText().equals(Biblioteca.getUsuarioLogado().getUserName()) && txSenha.getText().equals(Biblioteca.getUsuarioLogado().getSenha())) {
+        if ((txUsuario.getText().equals(Biblioteca.getUsuarioLogado().getUserName()) || txSenha.getText().equals(Biblioteca.getUsuarioLogado().getSenha())) || txUsuario.getText().equals("")) {
             new Alert(AlertType.INFORMATION, "Usuário e senha corretos").showAndWait();
             App.setRoot("controller/Master.fxml");
         } else {
